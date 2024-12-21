@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-    <div id="buttonpanel">
+    
+    <header id="header-mainpage">
         <center>
-        <form>
-            <button formaction="">Test</button><br>
-            <button formaction="">Test</button><br>
-            <button formaction="">Test</button><br>
-            <button formaction="">Test</button><br>
-            <button formaction="">Test</button><br>
-            <button formaction="">Test</button><br>
-        </form>
+            <h1>Intranet</h1>
         </center>
-    </div>
+    </header>
+    <section class="search-container">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Suche hier..." 
+            oninput="searchContent()"
+        >
+    </section>
+    <section id="content">
+        <div class="content-item" data-title="HTML Tutorial">Lerne die Grundlagen von HTMLawdawdawd.</div>
+        <div class="content-item" data-title="CSS Styling">Gestalte Webseiten mit CSS.</div>
+        <div class="content-item" data-title="JavaScript Basics">Programmiere interaktive Funktionen mit JavaScript.</div>
+        <div class="content-item" data-title="React Framework">Erstelle moderne Anwendungen mit React.</div>
+        <div class="content-item" data-title="Node.js Einführung">Lerne, wie Node.js im Backend verwendet wird.</div>
+    </section>
+    <p id="noResults" style="display: none; text-align: center; color: #777;">Keine Ergebnisse gefunden.</p>
+<script src="public/js/suchfunktion.js"></script>
 </body>
 </html>
