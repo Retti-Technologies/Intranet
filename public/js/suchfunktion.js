@@ -1,7 +1,7 @@
 // Liste der internen Seiten
 const pages = [
-    { url: "/sub sites/arduinodata.html", title: "Seite 1" },
-    { url: "/sub sites/page2.html", title: "Seite 2" },
+    { url: "/sub sites/arduinodata.html", title: "Luftwerte Serverraum" },
+    { url: "http://192.168.178.70", title: "3D Drucker" },
     { url: "/sub sites/page3.html", title: "Seite 3" },
 ];
 
@@ -23,6 +23,7 @@ async function loadMetaData() {
             // Meta-Daten extrahieren
             const description = doc.querySelector('meta[name="description"]')?.content || "Keine Beschreibung verfügbar";
             const keywords = doc.querySelector('meta[name="keywords"]')?.content || "Keine Schlüsselwörter verfügbar";
+            const author = doc.querySelector('meta[name="author"]')?.content || "Kein Autor verfügbar";
 
             // HTML erstellen
             const div = document.createElement("div");
@@ -31,8 +32,7 @@ async function loadMetaData() {
             div.dataset.url = page.url; // URL für die Weiterleitung speichern
             div.innerHTML = `
                 <h2>${page.title}</h2>
-                <p><strong>Description:</strong> ${description}</p>
-                <p><strong>Keywords:</strong> ${keywords}</p>
+                <p> ${description}</p>
             `;
 
             // Klick-Event hinzufügen
