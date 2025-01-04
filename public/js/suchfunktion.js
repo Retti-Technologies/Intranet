@@ -2,7 +2,7 @@
 const pages = [
     { url: "/sub sites/arduinodata.html", title: "Luftwerte Serverraum" },
     { url: "http://192.168.178.70", title: "3D Drucker" },
-    { url: "/sub sites/page3.html", title: "Seite 3" },
+    { url: "/sub sites/weather.html", title: "Wetter" },
 ];
 
 // Meta-Daten abrufen und anzeigen
