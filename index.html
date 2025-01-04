@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
-    <div class="werbung" hidden>
-        Dies ist eine werbung
+    <div class="werbung" >
+        <div class="container-weather-parent">
+        <div class="container-weather">
+            <h1>Wetter</h1>
+            <p>Wetterdaten für Eslohe:</p>
+            <div class="weather-info" id="weather-info">
+                <!-- Wetterinformationen werden hier angezeigt -->
+            </div>
+        </div>
+        </div>
     </div>
     <div id="main">
     <header>
@@ -32,6 +40,7 @@
     </div>
     <div id="footer"></div>
     
+    <script src="/public/js/weather.js"></script>
     <script src="/public/js/suchfunktion.js"></script>
     <script src="/public/js/tempaltes.js"></script>
 </body>
