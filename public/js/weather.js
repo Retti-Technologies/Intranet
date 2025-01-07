@@ -26,4 +26,4 @@ async function fetchWeather() {
 
 // Abrufen der Wetterdaten alle 60 Sekunden
 fetchWeather();
-setInterval(fetchWeather, 60000);
+setInterval(fetchWeather, 120000);
