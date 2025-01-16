@@ -37,6 +37,8 @@ header {
 
 .container-weather-parent{
     background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 10px;
+
 }
 
 .container-weather {
@@ -80,7 +82,6 @@ input[type="text"]:focus {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: blue;
 }
 
 .content-item {
